@@ -2,9 +2,8 @@ import { Server } from "socket.io";
 
 const io = new Server(9000, {
     cors: {
-        origin: 'https://chatify.swanshi.me' ,
-        credentials:true
-    }
+    origin: "*"
+}
 });
 
 let users = [];
